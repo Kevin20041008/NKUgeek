@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // 运行环境 & 模块系统（适配 Vite 浏览器项目）
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    "types": [
+      "vite/client"
+    ],
+    // 兼容 CJS 包的默认导入（如 axios）
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "verbatimModuleSyntax": false,
+    // 输出（前端应用一般不需要 .d.ts）
+    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    // 类型收紧
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    // 其他
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true
+  }
+}
